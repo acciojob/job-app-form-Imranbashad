@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 	<!-- the entire body must be written by student -->
+	<form action="/submit" method="post">
+		<label for="name">Name</label>
+		<input type="text" id="name" required name="username"> 
+		<br>
+		<label for="email">Email</label>
+		<input type="email" id="email" required name="useremail"><br>
+		<label>Gender</label>
+		<input type="radio" name="gender" required id="male" value="Male">
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="female" value="Female">
+		<label for="female">Female</label>
+		<br>
+		<label for="laptop">Laptop Brands</label>
+		<select for="laptop" name ="laptopBrands">
+			<option value ="Apple">Apple</option>
+			<option value ="Asus">Asus</option>
+			<option value ="HP">HP</option>
+		</select>
+		<br>
+		<label for="age">Age</label>
+		<input type="number" id="age" required name="userage"><br>
+		<label for="dob">Date of Birth</label>
+		<input type="date" id="dob" required name="userdob"><br>
+		<label for="password">Password</label>
+		<input type="password" id="password" required name="userpassword"><br>
+		<label for="portfolio">Portfolio URL</label>
+		<input type="url" id="portfolio" name="userURL"><br>
+		<button type="submit">Submit</button>
+		
+	</form>
+
+
+
+
+
+
+
+	
     <script type="text/javascript" src="./script.js">
 </script>
-
 </body>
-
 </html>
